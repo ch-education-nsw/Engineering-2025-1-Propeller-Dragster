@@ -1,0 +1,34 @@
+@font-face {
+    font-family: Archivo;
+    src: url(Archivo.ttf);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    visibility: hidden;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(130, 156, 179); 
+  }
+
+
+  .navbar-menu a {
+    text-decoration: none;
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline !important;
+}
