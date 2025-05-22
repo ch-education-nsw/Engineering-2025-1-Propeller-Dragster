@@ -6,6 +6,14 @@
         .centre::before {
             background: url('mj_11237_2.jpg') no-repeat center center/cover;
         }
+
+        table, td, th {
+  border:1px solid white;
+}
+
+table {
+    border-radius: 4px;
+}
     </style>
 </head>
 <body>
@@ -26,6 +34,23 @@
     <img src="Design/cad.png">
     <p class="subtitle">Circuit Diagram</p>
     <img src="Design/wiring.png" style="width: 200px;">
+    <p class="subtitle">Propeller Designs</p>
+    <table style="width:60%; margin-left: 50%; transform: translateX(-50%); font-family: 'Nunito', sans-serif; font-size: large; text-align: center; border-spacing: 0px; font-weight: bold;">
+        <tr>
+          <th>Low Pitch (of blades)</th>
+          <th>High Pitch</th>
+        </tr>
+        <tr>
+          <td>Results in higher rotational speeds but lower forward speed.
+            Increases efficiency at low speeds
+            Causes inefficiency at high speeds</td>
+          <td>Results in lower rotational speeds but achieves higher forward speed.
+            Increases efficiency at higher speeds
+            Reduces acceleration or low-speed thrust, making it harder to accelerate.
+            </td>
+        </tr>
+      </table>
+
 
     <script src="navbar.js"></script>
 </body>

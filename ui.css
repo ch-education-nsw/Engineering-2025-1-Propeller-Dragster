@@ -87,6 +87,7 @@ display: inline-block;
 margin-left: 20px; /* Add space between each navbar item */
 font-family: "Nunito", sans-serif;
 font-weight: bold;
+cursor: pointer;
 }
 
 
@@ -129,11 +130,44 @@ font-weight: bold;
 
 p.main {
   margin: 20px;
-  text-align: center;
+  text-align: left;
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+  font-weight: light;
+}
+
+label {
+    font-weight: bold;
+      font-size: 20px;
+
+
+}
+
+.grid {
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 0;
+}
+
+p.main-left {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
+  text-align: left;
   font-size: 20px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
+
+.img-left {
+  margin-top: 20px;
+  width: 70%;
+  height: auto;
+}
+
 
 .navbar-content {
   margin-right: 30px;
@@ -160,4 +194,20 @@ img {
   transform: translateX(-50%);
   margin-bottom: 20px;
   border-radius: 5px;
+}
+
+       table, td, th {
+  border:1px solid white;
+}
+
+table {
+    border-radius: 4px;
+}
+
+li {
+    margin: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
 }
