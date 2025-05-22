@@ -148,7 +148,9 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2019_Toyota_Corolla_Icon_Tech_VVT-i_Hybrid_1.8.jpg/2560px-2019_Toyota_Corolla_Icon_Tech_VVT-i_Hybrid_1.8.jpg') no-repeat center center/cover;
+  /*background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2019_Toyota_Corolla_Icon_Tech_VVT-i_Hybrid_1.8.jpg/2560px-2019_Toyota_Corolla_Icon_Tech_VVT-i_Hybrid_1.8.jpg') no-repeat center center/cover;
+ */
+ background: none;
   filter: blur(4px);
   z-index: -1;
 }
@@ -246,19 +248,38 @@ img {
   border-radius: 5px;
 }
 
-td,
-th {
-  border: 1px solid white;
-}
-
 table {
+  border-collapse: collapse; /* merge borders between cells */
   text-align: center;
   width: 80%;
   margin-left: 50%;
   transform: translateX(-50%);
-  border-spacing: 0;
-  border-radius: 4px;
+  overflow: hidden; /* ensures rounding is visible */
 }
+
+td,
+th {
+  border: 4px solid white;
+  padding: 8px; /* optional: better spacing */
+}
+
+/* Optional: apply border-radius directly to table corners */
+th:first-child {
+  border-top-left-radius: 4px;
+}
+
+th:last-child {
+  border-top-right-radius: 4px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 4px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 4px;
+}
+
 
 li {
   margin: 20px;
