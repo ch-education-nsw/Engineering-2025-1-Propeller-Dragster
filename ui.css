@@ -1,42 +1,42 @@
 @font-face {
-    font-family: Archivo;
-    src: url(Archivo.ttf);
-  }
-  
-  @font-face {
-    font-family: Nunito;
-    src: url(nunito.ttf);
-  }
-  
+  font-family: Archivo;
+  src: url(Archivo.ttf);
+}
 
-  .left {
+@font-face {
+  font-family: Nunito;
+  src: url(nunito.ttf);
+}
+
+
+.left {
   font-family: sans-serif;
-  }
+}
 
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    visibility: hidden;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: grey; 
-    
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(130, 156, 179); 
-  }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  visibility: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(130, 156, 179);
+}
 
 
-  .navbar-menu a {
-    text-decoration: none;
+.navbar-menu a {
+  text-decoration: none;
 }
 
 .navbar-menu a:hover {
@@ -44,6 +44,8 @@
 }
 
 body {
+  background-color: black !important;
+  text-shadow: 0 3px 2px rgba(0, 0, 0, 1);
   margin: 0;
   padding: 0;
   color: #ffffff;
@@ -60,43 +62,72 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("background.jpg");
-  background-size: 100vw;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+    url("blueprint.jpg");
+  background-size: 75vw;
   background-position: center;
-  filter: blur(10px); /* Adjust the blur intensity here */
+  background-blend-mode: darken;
+  filter: blur(1px);
+  /* Adjust the blur intensity here */
   z-index: -1;
 }
 
+.main a {
+  color: #ffffff !important;
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+
 .navbar {
-display: flex;
-align-items: center; /* Vertically center the items */
-height: 7vh;
-width: 100%;
-justify-content: flex-end; /* Align items to the right */
-padding: 0 20px; /* Padding to keep the navbar consistent */
-z-index: 10; /* Make navbar items visible */
-position: fixed;
-background-color: rgba(0, 0, 0, 0.7); /* Slight background for navbar */
+  display: flex;
+  align-items: center;
+  /* Vertically center the items */
+  height: 7vh;
+  width: 100%;
+  justify-content: flex-end;
+  /* Align items to the right */
+  padding: 0 20px;
+  /* Padding to keep the navbar consistent */
+  z-index: 10;
+  /* Make navbar items visible */
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Slight background for navbar */
 }
 
 .navbar a {
-color: white;
-text-decoration: none;
-padding: 0 15px;
-display: inline-block;
-margin-left: 20px; /* Add space between each navbar item */
-font-family: "Nunito", sans-serif;
-font-weight: bold;
-cursor: pointer;
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  display: inline-block;
+  margin-left: 20px;
+  /* Add space between each navbar item */
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 
 .centre {
-  position: absolute; /* Position absolutely to the top */
-  top: 0; /* Directly below navbar */
+  position: absolute;
+  /* Position absolutely to the top */
+  top: 0;
+  /* Directly below navbar */
   left: 0;
   width: 100%;
-  height: calc(8vh + 200px + 2vh + 6vh); /* Adjust height as needed */
+  height: calc(8vh + 200px + 2vh + 6vh);
+  /* Adjust height as needed */
   text-align: center;
   font-family: "Archivo", sans-serif;
   font-size: 100px;
@@ -104,8 +135,10 @@ cursor: pointer;
   color: white;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align text closer to the top */
-  padding-top: 20px; /* Adjust this to bring the text closer to the top */
+  align-items: flex-start;
+  /* Align text closer to the top */
+  padding-top: 20px;
+  /* Adjust this to bring the text closer to the top */
 }
 
 .centre::before {
@@ -115,7 +148,7 @@ cursor: pointer;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('https://ch-education-nsw.github.io/Engineering-2025-1-Propeller-Dragster/background-1.png') no-repeat center center/cover;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2019_Toyota_Corolla_Icon_Tech_VVT-i_Hybrid_1.8.jpg/2560px-2019_Toyota_Corolla_Icon_Tech_VVT-i_Hybrid_1.8.jpg') no-repeat center center/cover;
   filter: blur(4px);
   z-index: -1;
 }
@@ -125,28 +158,45 @@ cursor: pointer;
   z-index: 1;
   text-shadow: 0 4px 4px black;
   margin-top: 7vh;
-  font-size: 100px; /* Decrease the font size for more space */
+  font-size: 100px;
+  /* Decrease the font size for more space */
 }
 
 p.main {
-  margin: 20px;
+  margin: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-bottom: -20px !important;
+  border-radius: 12px; /* Rounded corners */
   text-align: left;
-  font-size: 25px;
+  font-size: 28px;
   font-family: "Nunito", sans-serif;
-  font-weight: light;
+  font-weight: 300; /* Use numeric value instead of "light" */
+  color: #fff; /* Ensure text is readable on dark background */
+}
+
+p.main, ul {
+    margin: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  padding-bottom: -20px !important;
+  border-radius: 12px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */ 
 }
 
 label {
-    font-weight: bold;
-      font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 
 
 }
 
 .grid {
-  
+
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 0;
 }
 
@@ -196,16 +246,22 @@ img {
   border-radius: 5px;
 }
 
-       table, td, th {
-  border:1px solid white;
+td,
+th {
+  border: 1px solid white;
 }
 
 table {
-    border-radius: 4px;
+  text-align: center;
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-spacing: 0;
+  border-radius: 4px;
 }
 
 li {
-    margin: 20px;
+  margin: 20px;
   text-align: left;
   font-size: 20px;
   font-family: "Nunito", sans-serif;
