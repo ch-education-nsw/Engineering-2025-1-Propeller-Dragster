@@ -49,7 +49,7 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 18px;
   background-color: #121212;
   overflow-x: hidden;
   position: relative;
@@ -68,7 +68,7 @@ body::before {
   background-size: 75vw;
   background-position: center;
   background-blend-mode: darken;
-  filter: blur(1px);
+  filter: blur(4px);
   /* Adjust the blur intensity here */
   z-index: -1;
 }
@@ -76,7 +76,7 @@ body::before {
 .main a {
   color: #ffffff !important;
   margin: 20px;
-  font-size: 40px;
+  font-size: 33px;
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
@@ -172,7 +172,7 @@ p.main {
   padding-bottom: -20px !important;
   border-radius: 12px; /* Rounded corners */
   text-align: left;
-  font-size: 28px;
+  font-size: 21px;
   font-family: "Nunito", sans-serif;
   font-weight: 300; /* Use numeric value instead of "light" */
   color: #fff; /* Ensure text is readable on dark background */
@@ -190,7 +190,7 @@ p.main, ul {
 
 label {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 13px;
 
 
 }
@@ -209,7 +209,7 @@ p.main-left {
   margin: 10px;
   margin-top: 20px;
   text-align: left;
-  font-size: 20px;
+  font-size: 13px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
@@ -233,7 +233,7 @@ p.main-left {
 
 .subtitle {
   margin: 20px;
-  font-size: 40px;
+  font-size: 33px;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
@@ -260,7 +260,7 @@ table {
 
 td,
 th {
-  border: 4px solid white;
+  border: 1px solid white;
   padding: 8px; /* optional: better spacing */
   border-radius: 4px;
 }
@@ -268,7 +268,7 @@ th {
 li {
   margin: 20px;
   text-align: left;
-  font-size: 20px;
+  font-size: 13px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
