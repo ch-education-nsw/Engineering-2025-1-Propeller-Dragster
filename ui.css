@@ -68,7 +68,7 @@ body::before {
   background-size: 75vw;
   background-position: center;
   background-blend-mode: darken;
-  filter: blur(4px);
+  filter: blur(5px);
   /* Adjust the blur intensity here */
   z-index: -1;
 }
@@ -268,7 +268,7 @@ th {
 li {
   margin: 20px;
   text-align: left;
-  font-size: 13px;
+  font-size: 18px;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
