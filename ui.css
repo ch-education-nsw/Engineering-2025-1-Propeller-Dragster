@@ -249,6 +249,7 @@ img {
 }
 
 table {
+  background-color: rgba(0, 0, 0, 0.6);
   border-collapse: collapse; /* merge borders between cells */
   text-align: center;
   width: 80%;
@@ -261,25 +262,8 @@ td,
 th {
   border: 4px solid white;
   padding: 8px; /* optional: better spacing */
+  border-radius: 4px;
 }
-
-/* Optional: apply border-radius directly to table corners */
-th:first-child {
-  border-top-left-radius: 4px;
-}
-
-th:last-child {
-  border-top-right-radius: 4px;
-}
-
-tr:last-child td:first-child {
-  border-bottom-left-radius: 4px;
-}
-
-tr:last-child td:last-child {
-  border-bottom-right-radius: 4px;
-}
-
 
 li {
   margin: 20px;
