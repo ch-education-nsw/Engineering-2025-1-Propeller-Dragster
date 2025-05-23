@@ -288,3 +288,8 @@ li {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
+
+.whs-img {
+width: 100px;
+margin: 5px;
+}
